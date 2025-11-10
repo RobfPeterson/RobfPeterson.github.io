@@ -1,5 +1,7 @@
 ---
 layout: page
-title: Projects
+title: Showcase
 permalink: /projects/
 ---
+
+Self Coded Neural Net

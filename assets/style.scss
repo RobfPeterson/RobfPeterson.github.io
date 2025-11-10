@@ -1151,25 +1151,33 @@ Modules - reusable parts of our design
    =================================== */
 
 :root {
+  /* Light Mode Colors */
   --bg-color: #ffffff;
-  --text-color: #333333;
-  --secondary-bg: #f5f5f5;
-  --border-color: #ddd;
-  --link-color: #0085a1;
-  --link-hover: #005a70;
-  --code-bg: #f9f9f9;
-  --shadow: rgba(0, 0, 0, 0.1);
+  --text-color: #222222;
+  --secondary-bg: #f8f9fa;
+  --border-color: #dee2e6;
+  --link-color: #0066cc;
+  --link-hover: #0052a3;
+  --code-bg: #f5f5f5;
+  --code-text: #d63384;
+  --heading-color: #1a1a1a;
+  --shadow: rgba(0, 0, 0, 0.08);
+  --nav-hover: #e9ecef;
 }
 
 [data-theme="dark"] {
-  --bg-color: #1a1a1a;
-  --text-color: #e0e0e0;
-  --secondary-bg: #2d2d2d;
-  --border-color: #404040;
-  --link-color: #4db8d8;
-  --link-hover: #6dcbe6;
-  --code-bg: #2d2d2d;
-  --shadow: rgba(0, 0, 0, 0.3);
+  /* Dark Mode Colors - High Contrast */
+  --bg-color: #0d1117;
+  --text-color: #c9d1d9;
+  --secondary-bg: #161b22;
+  --border-color: #30363d;
+  --link-color: #58a6ff;
+  --link-hover: #79c0ff;
+  --code-bg: #161b22;
+  --code-text: #ff7b72;
+  --heading-color: #f0f6fc;
+  --shadow: rgba(0, 0, 0, 0.5);
+  --nav-hover: #21262d;
 }
 
 /* Apply theme colors */

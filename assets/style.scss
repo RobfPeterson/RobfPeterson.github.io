@@ -1158,6 +1158,10 @@ Modules - reusable parts of our design
   --border-color: #dee2e6;
   --link-color: #0066cc;
   --link-hover: #0052a3;
+  --nav-link-color: #555555;
+  --nav-link-hover: #000000;
+  --description-color: #666666;
+  --pullquote-color: #555555;
   --code-bg: #f5f5f5;
   --code-text: #d63384;
   --heading-color: #1a1a1a;
@@ -1168,14 +1172,18 @@ Modules - reusable parts of our design
 [data-theme="dark"] {
   /* Dark Mode Colors - High Contrast */
   --bg-color: #0d1117;
-  --text-color: #c9d1d9;
+  --text-color: #e6edf3;
   --secondary-bg: #161b22;
   --border-color: #30363d;
   --link-color: #58a6ff;
   --link-hover: #79c0ff;
+  --nav-link-color: #e6edf3;
+  --nav-link-hover: #ffffff;
+  --description-color: #9198a1;
+  --pullquote-color: #8b949e;
   --code-bg: #161b22;
   --code-text: #ff7b72;
-  --heading-color: #f0f6fc;
+  --heading-color: #ffffff;
   --shadow: rgba(0, 0, 0, 0.5);
   --nav-hover: #21262d;
 }
@@ -1206,12 +1214,25 @@ a {
 }
 
 .site-name a {
+  color: var(--heading-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+}
+
+nav a {
   color: var(--text-color);
+  
+  &:hover {
+    background-color: var(--nav-hover);
+  }
 }
 
 code {
   background-color: var(--code-bg);
   border: 1px solid var(--border-color);
+  color: var(--code-text);
 }
 
 pre {
@@ -1222,6 +1243,12 @@ pre {
 blockquote {
   border-left: 2px solid var(--border-color);
   color: var(--text-color);
+  opacity: 0.9;
+}
+
+[data-theme="dark"] blockquote {
+  opacity: 1;
+  color: #e6edf3;
 }
 
 .entry {
@@ -1276,11 +1303,24 @@ blockquote {
 
 /* Images - prevent them from being too bright in dark mode */
 [data-theme="dark"] img {
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 [data-theme="dark"] .site-avatar img {
   opacity: 1;
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+}
+
+/* Better text contrast in dark mode */
+[data-theme="dark"] {
+  p, li, td {
+    color: #e6edf3;
+  }
+  
+  .site-description {
+    color: #e6edf3;
+  }
 }
 
 /* Tables */
@@ -1302,8 +1342,30 @@ table {
     background-color: var(--code-bg);
   }
   
-  .highlight .c { color: #75715e; }
-  .highlight .k { color: #f92672; }
-  .highlight .s { color: #e6db74; }
-  .highlight .n { color: #f8f8f2; }
+  /* GitHub Dark Theme inspired colors */
+  .highlight .c { color: #9198a1; } /* Comments - lighter */
+  .highlight .k { color: #ff7b72; } /* Keywords */
+  .highlight .s { color: #a5d6ff; } /* Strings */
+  .highlight .n { color: #ffa657; } /* Names */
+  .highlight .o { color: #ff7b72; } /* Operators */
+  .highlight .p { color: #e6edf3; } /* Punctuation - lighter */
+  .highlight .m { color: #79c0ff; } /* Numbers */
+  .highlight .nf { color: #d2a8ff; } /* Functions */
+  .highlight .nc { color: #f0883e; } /* Classes */
+}
+
+/* Enhanced contrast for light mode code */
+[data-theme="light"] {
+  .highlight {
+    background-color: var(--code-bg);
+  }
+  
+  .highlight .c { color: #6a737d; } /* Comments */
+  .highlight .k { color: #d73a49; } /* Keywords */
+  .highlight .s { color: #032f62; } /* Strings */
+  .highlight .n { color: #005cc5; } /* Names */
+  .highlight .o { color: #d73a49; } /* Operators */
+  .highlight .m { color: #005cc5; } /* Numbers */
+  .highlight .nf { color: #6f42c1; } /* Functions */
+  .highlight .nc { color: #e36209; } /* Classes */
 }

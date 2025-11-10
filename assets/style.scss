@@ -1174,7 +1174,7 @@ Modules - reusable parts of our design
   --bg-color: #0d1117;
   --text-color: #e6edf3;
   --secondary-bg: #161b22;
-  --border-color: #6b46c1;
+  --border-color: #6b46c1; 
   --link-color: #58a6ff;
   --link-hover: #79c0ff;
   --nav-link-color: #e6edf3;
@@ -1222,11 +1222,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 nav a {
-  color: var(--text-color);
+  color: var(--nav-link-color);
   
   &:hover {
     background-color: var(--nav-hover);
+    color: var(--nav-link-hover);
   }
+}
+
+.site-description {
+  color: var(--description-color);
+}
+
+/* Pullquotes styling */
+.pullquote {
+  color: var(--pullquote-color);
+  border-left: 4px solid var(--link-color);
+  font-style: italic;
+  padding-left: 20px;
+  margin: 20px 0;
+}
+
+[data-theme="dark"] .pullquote {
+  border-left-color: var(--link-color);
 }
 
 code {
@@ -1319,7 +1337,29 @@ blockquote {
   }
   
   .site-description {
+    color: var(--description-color);
+    font-weight: 400;
+  }
+  
+  nav a {
+    font-weight: 500;
+  }
+  
+  /* Archive page styling */
+  .archive-group {
     color: #e6edf3;
+  }
+  
+  .archive-item {
+    border-bottom: 1px solid var(--border-color);
+    
+    a {
+      color: var(--link-color);
+      
+      &:hover {
+        color: var(--link-hover);
+      }
+    }
   }
 }
 

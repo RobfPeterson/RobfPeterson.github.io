@@ -39,9 +39,7 @@
                 <a href="{{ site.baseurl }}/search">Search</a>
                 <a href="{{ site.baseurl }}/about">About</a>
                 <a href="{{ site.baseurl }}/archive">Archive</a>
-                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-                  <span class="theme-icon">🌓</span>
-                </button>
+                <button id="theme-toggle" onclick="toggleTheme()">🌓</button>
             </nav>
           </header>
         </div>
@@ -60,38 +58,20 @@
       </div>
     </div>
     {% include analytics.html %}
-    
+
     <script>
       function toggleTheme() {
-        const html = document.documentElement;
-        const currentTheme = html.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        
-        html.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        
-        // Update button icon
-        updateThemeIcon(newTheme);
-      }
-      
-      function updateThemeIcon(theme) {
-        const icon = document.querySelector('.theme-icon');
-        if (icon) {
-          icon.textContent = theme === 'dark' ? '☀️' : '🌓';
-        }
-      }
-      
-      // Set initial icon
-      document.addEventListener('DOMContentLoaded', function() {
-        const currentTheme = document.documentElement.getAttribute('data-theme');
-        updateThemeIcon(currentTheme);
-        
-        // Add click handler
-        const toggleButton = document.getElementById('theme-toggle');
-        if (toggleButton) {
-          toggleButton.addEventListener('click', toggleTheme);
-        }
-      });
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    }
+
+  // Set initial theme
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
     </script>
   </body>
 </html>

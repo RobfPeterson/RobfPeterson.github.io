@@ -1,0 +1,26 @@
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header, nav, .wrapper-masthead {
+  background-color: var(--header-bg);
+}
+
+a {
+  color: var(--link-color);
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.wrapper-footer {
+  background-color: var(--header-bg);
+  border-top: 1px solid var(--border-color);
+}

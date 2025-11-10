@@ -11,6 +11,8 @@
         const savedTheme = localStorage.getItem('theme') || 'light';
         document.documentElement.setAttribute('data-theme', savedTheme);
       })();
+      const savedTheme = localStorage.getItem('theme') || 
+  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     </script>
     
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/style.css" />

@@ -28,11 +28,12 @@
             </div>
 
             <nav>
-              <a href="{{ site.baseurl }}/">Home</a>
-              <a href="{{ site.baseurl }}/getting-started">Getting Started</a>
-              <a href="{{ site.baseurl }}/search">Search</a>
-              <a href="{{ site.baseurl }}/about">About</a>
-              <a href="{{ site.baseurl }}/archive">Archive</a>
+                <a href="{{ site.baseurl }}/">Home</a>
+                <a href="{{ site.baseurl }}/getting-started">Getting Started</a>
+                <a href="{{ site.baseurl }}/search">Search</a>
+                <a href="{{ site.baseurl }}/about">About</a>
+                <a href="{{ site.baseurl }}/archive">Archive</a>
+                <button id="theme-toggle" onclick="toggleTheme()">🌓</button>
             </nav>
           </header>
         </div>
@@ -54,5 +55,20 @@
     </div>
 
     {% include analytics.html %}
+
+    <script>
+  function toggleTheme() {
+    const html = document.documentElement;
+    const currentTheme = html.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+  }
+
+  // Set initial theme
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+</script>
   </body>
 </html>

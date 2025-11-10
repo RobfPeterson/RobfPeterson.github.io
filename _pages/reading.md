@@ -12,3 +12,4 @@ Currently Reading:
 
 Past Favorites, ranked in order:
 1. *The Power Broker*, by Robert A. Caro
+2. *Nudge: The Final Edition*, by Richard H. Thaler and Cass R. Sunstein

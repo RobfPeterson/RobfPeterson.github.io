@@ -70,8 +70,9 @@
         html.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
         
-        // Update button icon
+        // Update button icon and avatar
         updateThemeIcon(newTheme);
+        updateThemeAvatar(newTheme);
       }
       
       function updateThemeIcon(theme) {
@@ -81,10 +82,23 @@
         }
       }
       
-      // Set initial icon
+      function updateThemeAvatar(theme) {
+        const avatar = document.querySelector('.site-avatar img');
+        if (avatar) {
+          const baseUrl = '{{ site.baseurl }}';
+          if (theme === 'dark') {
+            avatar.src = baseUrl + '/images/samaritan-modified-dark.png';
+          } else {
+            avatar.src = baseUrl + '/images/samaritan-modified.png';
+          }
+        }
+      }
+      
+      // Set initial icon and avatar on page load
       document.addEventListener('DOMContentLoaded', function() {
         const currentTheme = document.documentElement.getAttribute('data-theme');
         updateThemeIcon(currentTheme);
+        updateThemeAvatar(currentTheme);
         
         // Add click handler
         const toggleButton = document.getElementById('theme-toggle');

@@ -79,6 +79,11 @@
         const icon = document.querySelector('.theme-icon');
         if (icon) {
           icon.textContent = theme === 'dark' ? '☀️' : '🌓';
+          if (theme === 'dark') {
+            icon.src = baseUrl + '/images/samaritan-modified-dark.png';
+          } else {
+            avatar.src = baseUrl + '/images/samaritan-modified.png';
+          }
         }
       }
       
@@ -87,9 +92,9 @@
         if (avatar) {
           const baseUrl = '{{ site.baseurl }}';
           if (theme === 'dark') {
-            avatar.src = baseUrl + '/images/samaritan-modified-dark.png';
+            avatar.src = baseUrl + '/images/samaritan-favicon.png';
           } else {
-            avatar.src = baseUrl + '/images/samaritan-modified.png';
+            avatar.src = baseUrl + '/images/favicon-light.png';
           }
         }
       }

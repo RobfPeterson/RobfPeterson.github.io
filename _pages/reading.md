@@ -20,15 +20,15 @@ Past Favorites, ranked in order:
 4. *An Army at Dawn*, by Rick Atkinson
 5. *Algorithms to Live by*, by Brian Christian and Tom Griffiths
 6. *Poor Charlie's Almanack*, by Charlie Munger
-⋅⋅⋅⋅* One of the most insightful books on turning small, systematic methods of thinking into decisions and then impact. 
-7. *Guns, Germs, and Steel*, by Jared Diamond.
-8. *The Undercover Economist*, by Tim Harford
-9. *Thinking in Systems*, by Donella Meadows
-10. *Titan: The Life of John D. Rockefeller, Sr.*, by Ron Chernow
-11. *The Day of Battle*, by Rick Atkinson
-12. *Freakonomics*, by Stephen J. Dubner and Steven Levitt
-13. *End Times*, by Peter Turchin
-14. *The Guns at Last Light: The War in Western Europe*, by Rick Atkinson
-15. *VC: An American History*, by Tom Nicholas
-16. *The World For Sale: Money, Power, and the Traders Who Barter the Earth's Resources*, by Javier Blas and Jack Farchy
-17. *The 48 Laws of Power*, by Robert Greene
+⋅⋅⋅⋅+ One of the most insightful books on turning small, systematic methods of thinking into decisions and then impact. 
+8. *Guns, Germs, and Steel*, by Jared Diamond.
+9. *The Undercover Economist*, by Tim Harford
+10. *Thinking in Systems*, by Donella Meadows
+11. *Titan: The Life of John D. Rockefeller, Sr.*, by Ron Chernow
+12. *The Day of Battle*, by Rick Atkinson
+13. *Freakonomics*, by Stephen J. Dubner and Steven Levitt
+14. *End Times*, by Peter Turchin
+15. *The Guns at Last Light: The War in Western Europe*, by Rick Atkinson
+16. *VC: An American History*, by Tom Nicholas
+17. *The World For Sale: Money, Power, and the Traders Who Barter the Earth's Resources*, by Javier Blas and Jack Farchy
+18. *The 48 Laws of Power*, by Robert Greene

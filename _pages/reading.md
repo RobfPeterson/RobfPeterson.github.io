@@ -20,7 +20,7 @@ Past Favorites, ranked in order:
 4. *An Army at Dawn*, by Rick Atkinson
 5. *Algorithms to Live by*, by Brian Christian and Tom Griffiths
 6. *Poor Charlie's Almanack*, by Charlie Munger
-⋅⋅⋅⋅+ One of the most insightful books on turning small, systematic methods of thinking into decisions and then impact. 
+     + One of the most insightful books on turning small, systematic methods of thinking into decisions and then impact. 
 8. *Guns, Germs, and Steel*, by Jared Diamond.
 9. *The Undercover Economist*, by Tim Harford
 10. *Thinking in Systems*, by Donella Meadows

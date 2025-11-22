@@ -23,10 +23,11 @@ Past Favorites, ranked in order:
 7. *Guns, Germs, and Steel*, by Jared Diamond.
 8. *The Undercover Economist*, by Tim Harford
 9. *Thinking in Systems*, by Donella Meadows
-10. *The Day of Battle*, by Rick Atkinson
-11. *Freakonomics*, by Stephen J. Dubner and Steven Levitt
-12. *End Times*, by Peter Turchin
-13. *The Guns at Last Light: The War in Western Europe*, by Rick Atkinson
-14. *VC: An American History*, by Tom Nicholas
-15. *The World For Sale: Money, Power, and the Traders Who Barter the Earth's Resources*, by Javier Blas and Jack Farchy
-16. *The 48 Laws of Power*, by Robert Greene
+10. *Titan: The Life of John D. Rockefeller, Sr.*, by Ron Chernow
+11. *The Day of Battle*, by Rick Atkinson
+12. *Freakonomics*, by Stephen J. Dubner and Steven Levitt
+13. *End Times*, by Peter Turchin
+14. *The Guns at Last Light: The War in Western Europe*, by Rick Atkinson
+15. *VC: An American History*, by Tom Nicholas
+16. *The World For Sale: Money, Power, and the Traders Who Barter the Earth's Resources*, by Javier Blas and Jack Farchy
+17. *The 48 Laws of Power*, by Robert Greene
